@@ -1,0 +1,34 @@
+openapi: 3.0.0
+info:
+  title: API
+  version: 1.0.0
+paths: {}
+components:
+  schemas:
+    model:
+      type: object
+      properties:
+        four:
+          description: array with no items
+          type: array
+        five:
+          description: singular example
+          type: string
+          example: exampleValue
+        six:
+          description: exclusiveMinimum true
+          exclusiveMinimum: true
+        seven:
+          description: exclusiveMinimum false
+          minimum: 10
+        eight:
+          maximum: 10
+          exclusiveMaximum: true
+        nine:
+          description: exclusiveMaximum false
+          maximum: 20
+        ten:
+          description: nullable string
+          type: string
+          nullable: true
+

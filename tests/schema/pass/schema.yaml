@@ -9,19 +9,22 @@ components:
       type: object
       properties:
         four:
-          description: array with no items
+          description: array with items
           type: array
+          items: {}
         five:
           description: singular example
           type: string
           example: exampleValue
         six:
-          description: exclusiveMinimum
+          description: exclusiveMinimum true
+          minimum: 10
           exclusiveMinimum: true
         seven:
           description: exclusiveMinimum false
           minimum: 10
         eight:
+          maximum: 10
           description: exclusiveMaximum true
           exclusiveMaximum: true
         nine:
